@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const logout = () => {
     removeToken();
-    router.push("/login");
+    router.push("/signin");
   };
 
   return (

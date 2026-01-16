@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import api from "@/lib/api";
-import { saveToken } from "@/lib/auth";
+import api from "@/libs/api";
+import { saveToken } from "@/libs/auth";
 import { useRouter } from "next/navigation";
 
-export default function AuthForm({ type }: { type: "login" | "register" }) {
+export default function AuthForm({ type }: { type: "signin" | "signup" }) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
