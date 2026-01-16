@@ -7,7 +7,7 @@ const features = [
   { title: "Modern UI", desc: "Responsive design using Tailwind CSS" },
 ];
 
-export default function Features() {
+const Features = () => {
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
@@ -23,4 +23,6 @@ export default function Features() {
       </div>
     </section>
   );
-}
+};
+
+export default Features;

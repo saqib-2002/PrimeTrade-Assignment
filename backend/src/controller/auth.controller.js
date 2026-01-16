@@ -19,6 +19,7 @@ const passwordRegex = /^(?=.*\d)(?=.*[a-z]).{6,20}$/;
 // @access  Public
 const signup = async (req, res) => {
   try {
+    console.log(req.body);
     const { fullname, email, password } = req.body; // fetching data from the body.
 
     // Checking if fullname, email and password are provided
